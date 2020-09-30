@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1 rem = 10px;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  color: $color-primary;
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  @media (min-width: 768px) {
+    margin: 0 5rem;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 12rem;
+  }
+}
+.gamburger {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &__item {
+    border-bottom: 2px solid $color-primary;
+    width: 20px;
+    display: block;
+    height: 7px;
+  }
+}
+
+.active {
+  font-family: "Helvetica", sans-serif;
+}
