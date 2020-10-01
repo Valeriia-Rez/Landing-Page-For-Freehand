@@ -1,0 +1,32 @@
+.button {
+  border: solid 2px $color-primary;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+  @media (min-width: 768px) {
+    padding: 1rem 1.9rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 1.5rem 3.5rem;
+  }
+  &-white {
+    background-color: $white;
+    color: $black;
+  }
+  &-primary {
+    background-color: $color-primary;
+    color: $white;
+  }
+  &-blue {
+    background-color: $blue;
+    color: $white;
+    border: $blue;
+  }
+  &-borderBlue {
+    background-color: $white;
+    color: $blue;
+    border: $blue;
+  }
+}

@@ -22,6 +22,20 @@ body {
   }
 }
 
+h1 {
+  font-family: $font-secondary;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem;
+  @media (min-width: 768px) {
+    line-height: 5rem;
+    font-size: 4rem;
+  }
+  @media (min-width: 1024px) {
+    line-height: 6.8rem;
+    font-size: 5.6rem;
+  }
+}
 a {
   text-decoration: none;
   color: $black;
@@ -32,6 +46,7 @@ li {
 }
 
 .container {
+  margin: 0 2rem;
   @media (min-width: 768px) {
     margin: 0 5rem;
   }
@@ -39,6 +54,7 @@ li {
     margin: 0 12rem;
   }
 }
+
 .gamburger {
   @media (min-width: 768px) {
     display: none;

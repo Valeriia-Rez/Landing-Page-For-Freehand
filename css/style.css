@@ -19,6 +19,20 @@ body {
     body {
       font-size: 1.6rem; } }
 
+h1 {
+  font-family: "NunitoSans", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem; }
+  @media (min-width: 768px) {
+    h1 {
+      line-height: 5rem;
+      font-size: 4rem; } }
+  @media (min-width: 1024px) {
+    h1 {
+      line-height: 6.8rem;
+      font-size: 5.6rem; } }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -26,13 +40,14 @@ a {
 li {
   list-style: none; }
 
-@media (min-width: 768px) {
-  .container {
-    margin: 0 5rem; } }
-
-@media (min-width: 1024px) {
-  .container {
-    margin: 0 12rem; } }
+.container {
+  margin: 0 2rem; }
+  @media (min-width: 768px) {
+    .container {
+      margin: 0 5rem; } }
+  @media (min-width: 1024px) {
+    .container {
+      margin: 0 12rem; } }
 
 @media (min-width: 768px) {
   .gamburger {
@@ -50,7 +65,7 @@ li {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 0;
   border-bottom: 1px solid #efeef3;
   align-items: center;
   letter-spacing: normal;
@@ -86,25 +101,6 @@ li {
     @media (min-width: 1024px) {
       .header__buttons-wrapper {
         min-width: 246px; } }
-  .header__button {
-    border: solid 2px #16133e;
-    border-radius: 8px;
-    padding: 0.5rem 0.7rem;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: inherit; }
-    @media (min-width: 768px) {
-      .header__button {
-        padding: 1rem 1.9rem; } }
-    @media (min-width: 1024px) {
-      .header__button {
-        padding: 1.5rem 3.5rem; } }
-    .header__button--white {
-      background-color: #fff;
-      color: #000; }
-    .header__button--primary {
-      background-color: #16133e;
-      color: #fff; }
 
 .navbar {
   display: none; }
@@ -119,3 +115,65 @@ li {
     @media (min-width: 1024px) {
       .navbar__nav-item:not(:last-child) {
         margin-right: 4rem; } }
+
+.button {
+  border: solid 2px #16133e;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit; }
+  @media (min-width: 768px) {
+    .button {
+      padding: 1rem 1.9rem; } }
+  @media (min-width: 1024px) {
+    .button {
+      padding: 1.5rem 3.5rem; } }
+  .button-white {
+    background-color: #fff;
+    color: #000; }
+  .button-primary {
+    background-color: #16133e;
+    color: #fff; }
+  .button-blue {
+    background-color: #007ffc;
+    color: #fff;
+    border: #007ffc; }
+  .button-borderBlue {
+    background-color: #fff;
+    color: #007ffc;
+    border: #007ffc; }
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem; }
+  @media (min-width: 768px) {
+    .brand {
+      flex-direction: row;
+      padding-top: 5rem; } }
+  .brand__image-wrapper, .brand__content {
+    width: 100%;
+    padding-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .brand__image-wrapper, .brand__content {
+        width: 50%;
+        padding-right: 1rem; } }
+    @media (min-width: 1024px) {
+      .brand__image-wrapper, .brand__content {
+        padding-bottom: 12rem; } }
+  .brand img {
+    width: 100%; }
+  .brand__text {
+    padding: 1.5rem 0;
+    color: #183b56; }
+    @media (min-width: 768px) {
+      .brand__text {
+        padding: 3rem 0;
+        font-size: 1.9rem;
+        line-height: 2rem; } }
+    @media (min-width: 1024px) {
+      .brand__text {
+        padding: 3rem 0;
+        font-size: 1.9rem;
+        line-height: 3.6rem; } }
