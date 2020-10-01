@@ -15,27 +15,44 @@ body {
   font-size: 1.3rem;
   box-sizing: border-box;
   color: #16133e; }
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     body {
       font-size: 1.6rem; } }
 
 h1 {
-  font-family: "NunitoSans", sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 4rem; }
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-bottom: 1rem; }
   @media (min-width: 768px) {
     h1 {
       line-height: 5rem;
-      font-size: 4rem; } }
+      font-size: 3.5rem; } }
   @media (min-width: 1024px) {
     h1 {
       line-height: 6.8rem;
-      font-size: 5.6rem; } }
+      font-size: 4.5rem; } }
+  @media (min-width: 1440px) {
+    h1 {
+      line-height: 6.8rem;
+      font-size: 5.6rem;
+      padding-bottom: 2.5rem; } }
 
 a {
   text-decoration: none;
   color: #000; }
+
+p {
+  color: #183b56;
+  line-height: 2.6rem; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.9rem;
+      line-height: 3rem; } }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.9rem;
+      line-height: 3.6rem; } }
 
 li {
   list-style: none; }
@@ -120,6 +137,7 @@ li {
   border: solid 2px #16133e;
   border-radius: 8px;
   padding: 0.5rem 0.7rem;
+  outline: none;
   cursor: pointer;
   font-family: inherit;
   font-weight: inherit; }
@@ -129,6 +147,10 @@ li {
   @media (min-width: 1024px) {
     .button {
       padding: 1.5rem 3.5rem; } }
+  @media (min-width: 1440px) {
+    .button {
+      font-size: 1.6rem;
+      line-height: 16px; } }
   .button-white {
     background-color: #fff;
     color: #000; }
@@ -142,38 +164,81 @@ li {
   .button-borderBlue {
     background-color: #fff;
     color: #007ffc;
-    border: #007ffc; }
+    border: 1px solid #007ffc; }
 
 .brand {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 3rem; }
   @media (min-width: 768px) {
     .brand {
       flex-direction: row;
-      padding-top: 5rem; } }
+      padding-top: 5rem;
+      padding-bottom: 7rem; } }
   .brand__image-wrapper, .brand__content {
-    width: 100%;
-    padding-bottom: 3rem; }
-    @media (min-width: 768px) {
-      .brand__image-wrapper, .brand__content {
-        width: 50%;
-        padding-right: 1rem; } }
-    @media (min-width: 1024px) {
-      .brand__image-wrapper, .brand__content {
-        padding-bottom: 12rem; } }
-  .brand img {
     width: 100%; }
-  .brand__text {
-    padding: 1.5rem 0;
-    color: #183b56; }
     @media (min-width: 768px) {
-      .brand__text {
-        padding: 3rem 0;
-        font-size: 1.9rem;
-        line-height: 2rem; } }
+      .brand__image-wrapper, .brand__content {
+        width: 50%; } }
+  @media (min-width: 768px) {
+    .brand__content {
+      padding-right: 2rem; } }
+  @media (min-width: 768px) {
+    .brand__content {
+      padding-right: 4rem; } }
+  @media (min-width: 1440px) {
+    .brand__content {
+      padding-right: 8rem; } }
+  .brand img {
+    width: 100%;
+    height: 100%; }
+  .brand__buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    padding: 3rem 0; }
+    @media (min-width: 768px) {
+      .brand__buttons {
+        max-width: 250px; } }
     @media (min-width: 1024px) {
-      .brand__text {
-        padding: 3rem 0;
-        font-size: 1.9rem;
-        line-height: 3.6rem; } }
+      .brand__buttons {
+        max-width: 346px; } }
+    @media (min-width: 1440px) {
+      .brand__buttons {
+        padding-top: 3.6rem; } }
+
+.services {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .services__items {
+      display: flex;
+      flex-direction: row; } }
+  .services__content {
+    width: 100%; }
+  .services__photo {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .services__photo {
+        width: 50%;
+        flex-direction: row; } }
+  .services__img {
+    width: 100%; }
+  .services__card {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .services__card {
+        width: 30%;
+        margin: 0; } }
+  .services__items {
+    padding-top: 2rem;
+    justify-content: space-between; }
+
+.card {
+  border: 1px solid #e5eaf4;
+  border-radius: 8px; }
