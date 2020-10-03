@@ -29,6 +29,9 @@
     }
   }
   &__link {
-    line-height: 52px;
+    line-height: 20px;
+    @media (min-width: 1440px) {
+      line-height: 52px;
+    }
   }
 }

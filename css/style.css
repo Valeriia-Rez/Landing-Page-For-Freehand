@@ -21,7 +21,7 @@ body {
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 4rem;
   padding-bottom: 1rem; }
   @media (min-width: 768px) {
@@ -48,11 +48,10 @@ p {
   text-align: initial; }
   @media (min-width: 768px) {
     p {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       line-height: 3rem; } }
   @media (min-width: 1024px) {
     p {
-      font-size: 1.9rem;
       line-height: 3.6rem; } }
 
 li {
@@ -177,6 +176,10 @@ li {
       flex-direction: row;
       padding-top: 5rem;
       padding-bottom: 7rem; } }
+  .brand__image-wrapper {
+    max-width: 580px;
+    max-height: 420px;
+    margin: 0 auto; }
   .brand__image-wrapper, .brand__content {
     width: 100%; }
     @media (min-width: 768px) {
@@ -211,37 +214,100 @@ li {
 
 .services {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 2rem 0; }
+  @media (min-width: 768px) {
+    .services {
+      padding: 4rem 0; } }
+  @media (min-width: 1024px) {
+    .services {
+      padding: 6rem 0; } }
   @media (min-width: 1440px) {
     .services {
       padding: 10rem 0; } }
-  @media (min-width: 768px) {
-    .services__items {
-      display: flex;
-      flex-direction: row; } }
+  .services__heading {
+    line-height: 40px;
+    padding: 0.5rem 0;
+    font-size: 2.4rem;
+    font-family: "Nunito Sans", sans-serif; }
+    @media (min-width: 768px) {
+      .services__heading {
+        font-size: 3rem; } }
+    @media (min-width: 1440px) {
+      .services__heading {
+        line-height: 52px;
+        padding: 1.8rem 0 1.5rem;
+        font-size: 4rem; } }
+  .services__block {
+    padding-top: 2rem; }
+    @media (min-width: 768px) {
+      .services__block {
+        padding-top: 4rem; } }
+    @media (min-width: 1440px) {
+      .services__block {
+        padding-top: 6.4rem; } }
+  .services__items {
+    justify-content: space-between; }
+    @media (min-width: 768px) {
+      .services__items {
+        display: flex;
+        flex-direction: row;
+        padding-top: 4rem; } }
+    @media (min-width: 1440px) {
+      .services__items {
+        padding-top: 6.4rem; } }
   .services__content {
     width: 100%; }
-  .services__photo {
-    width: 100%;
+  .services__pictures {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-between; }
     @media (min-width: 768px) {
-      .services__photo {
-        width: 50%;
+      .services__pictures {
         flex-direction: row; } }
+    .services__pictures-readers {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 55.2rem;
+      max-height: 50.2rem;
+      position: relative; }
+      @media (min-width: 768px) {
+        .services__pictures-readers {
+          width: 46%; } }
+    .services__pictures-text {
+      position: absolute;
+      bottom: 45px;
+      color: #fff;
+      padding: 0 2rem;
+      font-weight: 400;
+      line-height: 3rem; }
+      @media (min-width: 768px) {
+        .services__pictures-text {
+          font-size: 2.4rem;
+          line-height: 3.5rem; } }
+      @media (min-width: 1440px) {
+        .services__pictures-text {
+          padding: 0 4.8rem;
+          font-size: 3.6rem;
+          line-height: 4.8rem; } }
   .services__img {
-    width: 100%; }
+    width: 100%;
+    padding: 1rem 0; }
   .services__card {
     width: 70%;
     margin: 0 auto;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    max-width: 362px;
+    max-height: 348px; }
     @media (min-width: 768px) {
       .services__card {
         width: 32%;
         margin: 0; } }
-  .services__items {
-    padding-top: 2rem;
-    justify-content: space-between; }
+  .services__title {
+    color: #87a1b6; }
+    @media (min-width: 768px) {
+      .services__title {
+        font-size: 1.6rem; } }
 
 .card {
   display: flex;
@@ -271,4 +337,7 @@ li {
       .card__heading {
         line-height: 52px; } }
   .card__link {
-    line-height: 52px; }
+    line-height: 20px; }
+    @media (min-width: 1440px) {
+      .card__link {
+        line-height: 52px; } }
