@@ -1,6 +1,9 @@
 .services {
   display: flex;
   flex-direction: column;
+  @media (min-width: 1440px) {
+    padding: 10rem 0;
+  }
   &__items {
     @media (min-width: 768px) {
       display: flex;
@@ -27,7 +30,7 @@
     margin: 0 auto;
     margin-bottom: 3rem;
     @media (min-width: 768px) {
-      width: 30%;
+      width: 32%;
       margin: 0;
     }
   }
