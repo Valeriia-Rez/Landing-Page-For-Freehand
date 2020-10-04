@@ -1,5 +1,5 @@
 .button {
-  border: solid 2px $color-primary;
+  border: solid 2px $primary;
   border-radius: 8px;
   padding: 0.5rem 0.7rem;
   outline: none;
@@ -18,20 +18,48 @@
   }
   &-white {
     background-color: $white;
-    color: $black;
+    color: $primary;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      background-color: $primary;
+      color: $white;
+    }
   }
   &-primary {
-    background-color: $color-primary;
+    background-color: $primary;
     color: $white;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      background-color: $white;
+      color: $primary;
+    }
   }
   &-blue {
     background-color: $blue;
     color: $white;
     border: $blue;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      background-color: $white;
+      color: $blue;
+      border: 1px solid $blue;
+    }
   }
   &-borderBlue {
     background-color: $white;
     color: $blue;
     border: 1px solid $blue;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  &-rounded {
+    border-radius: 23px;
   }
 }

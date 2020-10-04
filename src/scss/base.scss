@@ -16,7 +16,7 @@ body {
   font-style: normal;
   font-size: 1.3rem;
   box-sizing: border-box;
-  color: $color-primary;
+  color: $primary;
   @media (min-width: 1440px) {
     font-size: 1.6rem;
   }
@@ -46,6 +46,7 @@ a {
   text-decoration: none;
   color: $black;
 }
+
 p {
   color: $dark-blue;
   line-height: 2.6rem;
@@ -58,6 +59,7 @@ p {
     line-height: 3.6rem;
   }
 }
+
 li {
   list-style: none;
 }
@@ -77,7 +79,7 @@ li {
     display: none;
   }
   &__item {
-    border-bottom: 2px solid $color-primary;
+    border-bottom: 2px solid $primary;
     width: 20px;
     display: block;
     height: 7px;
