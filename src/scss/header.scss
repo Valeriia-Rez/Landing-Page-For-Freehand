@@ -14,21 +14,7 @@
   @media (min-width: 1024px) {
     padding: 3rem 0;
   }
-  &__logo {
-    display: flex;
-    align-items: center;
-  }
-  &__logo-name {
-    padding-left: 1rem;
-    font-size: 2rem;
-    color: $logoName;
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
-    @media (min-width: 1024px) {
-      font-size: 3rem;
-    }
-  }
+
   &__buttons-wrapper {
     min-width: 130px;
     display: flex;

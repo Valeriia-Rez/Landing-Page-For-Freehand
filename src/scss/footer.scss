@@ -1,0 +1,91 @@
+.footer {
+  color: $white;
+  background-color: $footerColor;
+  padding: 2rem 0;
+  p,
+  &__logo {
+    color: $white;
+  }
+  p {
+    padding: 1.5rem 0;
+  }
+  &__icon {
+    background-color: #efeef3;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  &__icon-link {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+  }
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 4rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &-gdpr {
+      width: 106px;
+      height: 41px;
+      margin: 3rem 0 1rem;
+    }
+
+    &-trustpilot {
+      width: 100px;
+      height: 25px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+    &-heading {
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 22px;
+    }
+    &-link {
+      padding: 2rem 0;
+      a {
+        color: $white;
+        font-size: 1rem;
+        letter-spacing: 1.76px;
+        line-height: 22px;
+      }
+    }
+  }
+  &__copy {
+    padding: 5rem 0 3rem;
+  }
+}
