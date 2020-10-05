@@ -1,12 +1,11 @@
 .brand {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding: 2rem 0;
+
   @media (min-width: 768px) {
     flex-direction: row;
-    padding-top: 5rem;
-    padding-bottom: 7rem;
+    padding: 5rem 0 2rem;
   }
   &__image-wrapper {
     max-width: 580px;
@@ -30,6 +29,11 @@
     }
     @media (min-width: 1440px) {
       padding-right: 8rem;
+    }
+    p {
+      @media (min-width: 1440px) {
+        font-size: 19px;
+      }
     }
   }
 

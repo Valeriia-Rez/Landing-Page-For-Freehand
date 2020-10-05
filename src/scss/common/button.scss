@@ -14,7 +14,7 @@
   }
   @media (min-width: 1440px) {
     font-size: 1.6rem;
-    line-height: 16px;
+    font-weight: 500;
   }
   &-white {
     background-color: $white;
@@ -61,5 +61,11 @@
   }
   &-rounded {
     border-radius: 23px;
+    padding: 1rem 3rem;
+    font-weight: 400;
+    @media (min-width: 1440px) {
+      padding: 1.5rem 5rem;
+      box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.03);
+    }
   }
 }
