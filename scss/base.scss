@@ -25,19 +25,18 @@ body {
 h1 {
   font-family: $font-secondary;
   font-size: 3.5rem;
-  line-height: 4rem;
+  line-height: 40px;
   padding-bottom: 1rem;
   font-weight: 600;
   @media (min-width: 768px) {
-    line-height: 5rem;
-    font-size: 3.5rem;
+    line-height: 50px;
   }
   @media (min-width: 1024px) {
-    line-height: 5.8rem;
+    line-height: 58px;
     font-size: 4rem;
   }
   @media (min-width: 1440px) {
-    line-height: 6.8rem;
+    line-height: 68px;
     font-size: 5.6rem;
     padding-bottom: 2.5rem;
   }
@@ -50,14 +49,14 @@ a {
 
 p {
   color: $dark-blue;
-  line-height: 2.6rem;
+  line-height: 26px;
   text-align: initial;
   @media (min-width: 768px) {
     font-size: 1.8rem;
-    line-height: 3rem;
+    line-height: 30px;
   }
   @media (min-width: 1024px) {
-    line-height: 3.6rem;
+    line-height: 36px;
   }
 }
 
@@ -91,6 +90,7 @@ li {
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
 }
+
 .center {
   text-align: center;
 }
