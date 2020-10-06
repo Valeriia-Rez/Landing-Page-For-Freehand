@@ -16,11 +16,25 @@
 
   &__info {
     position: absolute;
-
     padding: 0 2rem;
     width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  &__buttons {
+    display: flex;
+    max-width: 255px;
+    justify-content: space-between;
+    margin: 0 auto;
+    @media (min-width: 1440px) {
+      max-width: 404px;
+      padding-top: 3rem;
+    }
+  }
+  &__text {
+    @media (min-width: 1440px) {
+      padding-top: 1.7rem;
+    }
   }
 }
