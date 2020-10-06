@@ -12,34 +12,7 @@
     padding: 10rem 0;
   }
 
-  &__title {
-    font-weight: 400;
-    padding-bottom: 0.5rem;
-    @media (min-width: 1440px) {
-      padding-bottom: 1.8rem;
-    }
-  }
-
-  &__heading {
-    line-height: 40px;
-    padding-bottom: 0.5rem;
-    font-size: 2.4rem;
-    font-family: $font-secondary;
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
-    @media (min-width: 1024px) {
-      padding-bottom: 1rem;
-    }
-    @media (min-width: 1440px) {
-      line-height: 52px;
-      padding-bottom: 1.5rem;
-      font-size: 4rem;
-      font-weight: 600;
-    }
-  }
-
-  &__items {
+  &__types {
     justify-content: space-between;
     padding-top: 3rem;
     @media (min-width: 768px) {
@@ -72,7 +45,17 @@
     }
   }
 
-  &__pictures {
+  &__type {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    @media (min-width: 768px) {
+      width: 32%;
+      margin: 0;
+    }
+  }
+
+  &__readers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,63 +67,9 @@
     @media (min-width: 1440px) {
       padding-top: 9rem;
     }
-
-    &-readers {
-      width: 100%;
-      margin: 0 auto;
-      max-width: 55.2rem;
-      max-height: 50.2rem;
-      position: relative;
-      @media (min-width: 768px) {
-        width: 49%;
-        margin: 0;
-      }
-    }
-
-    &-text {
-      position: absolute;
-      bottom: 45px;
-      color: $white;
-      padding: 0 2rem;
-      font-weight: 400;
-      line-height: 30px;
-      @media (min-width: 768px) {
-        font-size: 2.4rem;
-        line-height: 35px;
-      }
-      @media (min-width: 1440px) {
-        padding: 0 4.8rem;
-        font-size: 3.6rem;
-        line-height: 48px;
-      }
-    }
   }
 
-  &__img {
-    width: 100%;
-    padding: 1rem 0;
-  }
-
-  &__card {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    max-width: 362px;
-    max-height: 348px;
-    @media (min-width: 768px) {
-      width: 32%;
-      margin: 0;
-    }
-  }
-
-  &__title {
-    color: $light-grey;
-    @media (min-width: 768px) {
-      font-size: 1.6rem;
-    }
-  }
-
-  &__plan {
+  &__plans {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,90 +81,11 @@
     @media (min-width: 1440px) {
       padding-top: 9rem;
     }
-
-    &-text {
-      color: $light-grey;
-      padding: 2rem 0;
-      line-height: 28px;
-      font-size: 1.4rem;
-      @media (min-width: 768px) {
-        font-size: 1.6rem;
-      }
-      @media (min-width: 1440px) {
-        padding: 3.2rem 0 5.4rem;
-      }
-    }
-
-    &-month {
-      color: $light-grey;
-    }
-
-    &-heading {
-      font-size: 1.9rem;
-      line-height: 25px;
-      font-weight: 400;
-      padding-bottom: 1rem;
-      @media (min-width: 1440px) {
-        font-size: 2.4rem;
-        line-height: 32px;
-        padding-bottom: 3rem;
-      }
-    }
-
-    &-item {
-      border-radius: 0 0px 8px 8px;
-      box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.03);
-      padding: 3rem;
-      max-width: 362px;
-      max-height: 436px;
-      margin: 0 auto;
-      margin-bottom: 2rem;
-      @media (min-width: 768px) {
-        width: 32%;
-        margin: 0;
-      }
-      @media (min-width: 1440px) {
-        padding: 5.5rem 7.6rem;
-      }
-
-      &--blue,
-      &--green,
-      &--red {
-        display: block;
-        font-size: 2.5rem;
-        font-weight: 700;
-        @media (min-width: 768px) {
-          font-size: 3rem;
-        }
-        @media (min-width: 1440px) {
-          font-size: 4rem;
-          line-height: 52px;
-        }
-      }
-
-      &--blue {
-        color: $light-blue;
-      }
-
-      &--green {
-        color: $green;
-      }
-
-      &--red {
-        color: $red;
-      }
-    }
   }
-
-  .blue-border {
-    border-top: 4px solid $light-blue;
-  }
-
-  .green-border {
-    border-top: 4px solid $green;
-  }
-
-  .red-border {
-    border-top: 4px solid $red;
+  &__plan {
+    margin: 0 auto 2rem;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
   }
 }

@@ -5,6 +5,8 @@
   border: 1px solid $borderColor;
   border-radius: 8px;
   padding: 2rem;
+  max-width: 362px;
+  max-height: 348px;
   @media (min-width: 768px) {
     align-items: flex-start;
   }

@@ -4,7 +4,7 @@
   "description": "Landing page for Freehand",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/scss/main.scss css/style.css -w"
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
   },
   "author": "Rieznik Valeriia",
   "license": "ISC",
